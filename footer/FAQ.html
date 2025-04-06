@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ'S - Astronomy Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="footer-styling.css">
+    <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+</head>
+<style>
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    /* input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    } */
+
+    #faq-search {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+
+    .faq-category {
+        margin-bottom: 20px;
+    }
+
+    .faq-category h3 {
+        font-size: 24px;
+        margin-bottom: 20px;
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #264653;
+    }
+
+    .faq-item h4 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: #444444;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+
+    }
+
+
+    .faq-item p {
+        font-size: 16px;
+        margin-bottom: 20px;
+        display: none;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .faq-item p.show {
+        display: block;
+    }
+
+
+    .highlight {
+        background-color: yellow;
+    }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+    <main>
+
+      <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+
+        <div class="container">
+            <h2>Frequently Asked Questions</h2>
+            <input type="text" id="faq-search" placeholder="Search FAQs...">
+
+            <div class="faq-category">
+                <h3>General Information</h3>
+                <div class="faq-item">
+                    <h4>What is Astronomy Insights?</h4>
+                    <p><strong>Answer:</strong>Astronomy Insights is a platform dedicated to providing the latest news,
+                        products, and educational resources about space and astronomy.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How can I subscribe to the newsletter?</h4>
+                    <p><strong>Answer:</strong>You can subscribe to our newsletter by entering your email address at the
+                        bottom of our homepage.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3>Products/Services</h3>
+                <div class="faq-item">
+                    <h4>What products do you offer?</h4>
+                    <p><strong>Answer:</strong>We offer a range of telescopes, astronomy software, and space exploration
+                        kits suitable for both amateurs and professionals.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3>Big Bang Theory</h3>
+                <div class="faq-item">
+                    <h4>What is the Big Bang Theory?</h4>
+                    <p><strong>Answer:</strong>The Big Bang Theory is the prevailing cosmological model explaining the
+                        origin of the universe, suggesting it began as a singularity approximately 13.8 billion years
+                        ago.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>What evidence supports the Big Bang Theory?</h4>
+                    <p><strong>Answer:</strong>Evidence includes the cosmic microwave background radiation, the observed
+                        redshift of galaxies, and the abundance of light elements such as hydrogen and helium.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3>Evolution</h3>
+                <div class="faq-item">
+                    <h4>How did the universe evolve after the Big Bang?</h4>
+                    <p><strong>Answer:</strong>After the Big Bang, the universe expanded and cooled, leading to the
+                        formation of subatomic particles, simple atoms, stars, galaxies, and eventually the complex
+                        structures we see today.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3>Planets</h3>
+                <div class="faq-item">
+                    <h4>How many planets are in our solar system?</h4>
+                    <p><strong>Answer:</strong>There are eight recognized planets in our solar system: Mercury, Venus,
+                        Earth, Mars, Jupiter, Saturn, Uranus, and Neptune.</p>
+                </div>
+            </div>
+
+            <div class="faq-category">
+                <h3>Constellations</h3>
+                <div class="faq-item">
+                    <h4>What are constellations?</h4>
+                    <p><strong>Answer:</strong>Constellations are patterns of stars in the night sky that have been
+                        identified and named by various cultures throughout history.</p>
+                </div>
+                <div class="faq-item">
+                    <h4>How many constellations are there?</h4>
+                    <p><strong>Answer:</strong>There are 88 officially recognized constellations by the International
+                        Astronomical Union.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section footer-branding">
+          <div class="footer-title">Astronomy Insights</div>
+          <div class="footer-subtitle">© 2010 — 2024</div>
+          <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Quick Links</div>
+          <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+          <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+          <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Resources</div>
+          <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+          <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+        </div>
+        <div class="footer-section">
+          <div class="footer-title">Company</div>
+          <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+          <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+          <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="main-background"></div>
+
+    <script src="/footer/script.js"></script>
+
+
+    <script>
+        document.getElementById('faq-search').addEventListener('keyup', function () {
+            var searchQuery = this.value.toLowerCase();
+            var faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(function (item) {
+                var question = item.querySelector('h4').innerText.toLowerCase();
+                var answer = item.querySelector('p').innerText.toLowerCase();
+
+                if (question.includes(searchQuery) || answer.includes(searchQuery)) {
+                    item.style.display = 'block';
+                    highlight(item, searchQuery);
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        function highlight(item, query) {
+            var question = item.querySelector('h4');
+            var answer = item.querySelector('p');
+
+            question.innerHTML = question.innerText.replace(new RegExp(query, 'gi'), function (match) {
+                return '<span class="highlight">' + match + '</span>';
+            });
+
+            answer.innerHTML = answer.innerText.replace(new RegExp(query, 'gi'), function (match) {
+                return '<span class="highlight">' + match + '</span>';
+            });
+        }
+
+
+        //--------------- toggle answers ---------
+        document.addEventListener('DOMContentLoaded', function () {
+            const faqItems = document.querySelectorAll('.faq-item');
+
+            faqItems.forEach(item => {
+                const question = item.querySelector('h4');
+                const answer = item.querySelector('p');
+
+                question.addEventListener('click', () => {
+                    answer.classList.toggle('show');
+                });
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
