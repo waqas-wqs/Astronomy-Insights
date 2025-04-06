@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Observatorys - Astronomy Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+</head>
+<style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/card-img/card-6.webp");
+    height: 525px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+
+
+  .location h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #3f3a3a;
+  }
+
+  .observatory {
+    background: white;
+    padding: 20px;
+    margin: 10px auto;
+    border-radius: 8px;
+    max-width: 600px;
+  }
+
+  .observatory h3 {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 27px;
+    color: #3f3a3a;
+  }
+
+  .observatory p {
+    margin: 5px 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+
+  }
+
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    max-width: 900px;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>Observatory</h1>
+      </div>
+    </div>
+    <section class="planet-details">
+      <div class="planet-row">
+        <div class="planet-info">
+          <div class="planet-description">
+            <h2>Introduction</h2>
+            <p class="head-para">An observatory is a facility equipped for observing astronomical, atmospheric, and
+              other
+              natural phenomena. These facilities are crucial for collecting data and making significant discoveries
+              about
+              the universe and the Earth's atmosphere.</p>
+
+            <h3>Purpose of an Observatory</h3>
+            <p class="para">Observatories are designed to monitor and record celestial events, weather patterns, and
+              other
+              scientific phenomena. They play a key role in advancing our understanding of the cosmos and improving
+              weather forecasting and environmental monitoring.</p>
+
+            <h3>Types of Observatories</h3>
+            <ul>
+              <li><strong>Astronomical Observatories:</strong> These are primarily focused on observing celestial
+                objects
+                such as stars, planets, and galaxies. They often include telescopes and other optical instruments.</li>
+              <li><strong>Radio Observatories:</strong> These facilities use radio telescopes to detect and study radio
+                waves emitted by celestial objects.</li>
+              <li><strong>Space Observatories: </strong>These are telescopes or other instruments located in outer space
+                to avoid atmospheric distortion and provide clearer images and data.</li>
+            </ul>
+            <h3>Impact on Science and Society</h3>
+            <p class="para">Observatories have significantly advanced our knowledge of the universe, leading to
+              discoveries such as the expansion of the universe, the existence of exoplanets, and detailed studies of
+              black holes. They also contribute to improving weather predictions and understanding climate change,
+              directly impacting society and the environment.</p>
+          </div>
+        </div>
+
+        <div class="planet-pics planet-column">
+
+          <!-- Other Topics -->
+
+          <div class="topics-section">
+            <h2>More Topics</h2>
+            <div class="topics-container">
+              <div class="topic-card">
+                <a href="/Other Pages/constellations.html">
+                  <img src="img/other-pages/constellation.jpg" alt="neighbour">
+                </a>
+                <div class="topic-overlay">
+                  <h3>Constellations</h3>
+                  <span class="arrow">➔</span>
+                </div>
+              </div>
+              <div class="topic-card">
+                <a href="/Other Pages/bigbang.html"><img src="img/other-pages/bigbang.webp" alt="related"></a>
+                <div class="topic-overlay">
+                  <h3>Big Bang Theory</h3>
+                  <span class="arrow">➔</span>
+                </div>
+              </div>
+              <div class="topic-card">
+                <a href="/Other Pages/comets.html"><img src="img/other-pages/comets.jpg" alt="related"></a>
+                <div class="topic-overlay">
+                  <h3>Comets</h3>
+                  <span class="arrow">➔</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- TOP Observatories GEO Location -->
+      <section class="location">
+        <h1>Top Observatories Around the World</h1>
+
+        <div class="observatory" id="observatory1">
+          <h3>Mauna Kea Observatory</h3>
+          <p><strong>Location:</strong> Hawaii, USA</p>
+          <p><strong>Details:</strong> Mauna Kea Observatory is one of the world's premier locations for astronomical
+            research. It is home to some of the largest telescopes in the world.</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.2171864549263!2d-155.4681!3d19.8206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x79549b6a6a1e4771%3A0x376c60b54e6babc5!2sMauna%20Kea%20Observatories!5e0!3m2!1sen!2sus!4v1622833282155!5m2!1sen!2sus"></iframe>
+        </div>
+
+        <div class="observatory" id="observatory2">
+          <h3>Paranal Observatory</h3>
+          <p><strong>Location:</strong> Atacama Desert, Chile</p>
+          <p><strong>Details:</strong> Paranal Observatory is operated by the European Southern Observatory and is
+            home to
+            the Very Large Telescope (VLT).</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15462.915182998445!2d-70.4042!3d-24.6272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96a8803f07aa1db5%3A0x4d2e13f79f5c5f6c!2sParanal%20Observatory!5e0!3m2!1sen!2sus!4v1622833422157!5m2!1sen!2sus"></iframe>
+        </div>
+
+        <div class="observatory" id="observatory3">
+          <h3>Royal Observatory</h3>
+          <p><strong>Location:</strong> Greenwich, United Kingdom</p>
+          <p><strong>Details:</strong> The Royal Observatory played a major role in the history of astronomy and
+            navigation,
+            and is the location of the prime meridian.</p>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.564430237899!2d-0.0005!3d51.4769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761dc5b16d6e33%3A0x578aba9b1423d9b8!2sRoyal%20Observatory%20Greenwich!5e0!3m2!1sen!2sus!4v1622833482156!5m2!1sen!2sus"></iframe>
+        </div>
+      </section>
+    </section>
+  </main>
+
+
+
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section footer-branding">
+        <div class="footer-title">Astronomy Insights</div>
+        <div class="footer-subtitle">© 2010 — 2024</div>
+        <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+        <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+        <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Resources</div>
+        <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+        <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+        <div class="footer-subtitle"><a href="/footer/Gallery.html">Gallery</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Company</div>
+        <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+        <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+        <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="main-background"></div>
+
+  <script src="/Other Pages/script.js"></script>
+</body>
+
+</html>
