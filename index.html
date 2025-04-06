@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Astronomy Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <!-- <link rel="stylesheet" href="/bootstrap-5.3.3-dist/css/bootstrap.css"> -->
+  <!-- <link rel="stylesheet" href="/footer/footer-styling.css"> -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="/Homepage/img/Astronomy Insights-black.png" type="image/x-icon"> -->
+</head>
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+
+  <!-- hero - section -->
+
+  <section class="hero">
+    <div class="slideshow-container">
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="hero-content">
+          <h1>Exploring the Wonders of Our Solar System</h1>
+          <p>Dive into the fascinating details about our solar system's planets, their unique features, and their
+            significance in our universe.</p>
+          <a class="cta-button" href="/about planets/about-planets.html">Discover More</a>
+        </div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="hero-content">
+          <h1>Discover the Planets</h1>
+          <p>Explore detailed information about each planet in our solar system, including their sizes, atmospheres,
+            and unique characteristics.</p>
+          <a class="cta-button" href="/about planets/about-planets.html">Explore Planets</a>
+        </div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="hero-content">
+          <h1>Latest Developments in Astronomy</h1>
+          <p>Stay updated with the latest discoveries and advancements in the field of astronomy, from new planetary
+            findings to groundbreaking space missions.</p>
+          <a class="cta-button" href="/Other Pages/featured.html">Stay Updated</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- featured news -->
+
+  <main>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+
+    <div class="featured-container">
+      <div class="featured-header">
+        <h1 class="featured-title">Featured Discovery</h1>
+        <a href="/Other Pages/featured.html" class="more-news">More News</a>
+      </div>
+      <div class="band">
+        <div class="item-1">
+          <a href="/Other Pages/featured.html" class="card">
+            <div class="thumb" style="background-image: url(/img/featured-news/news-1.jpg);"></div>
+            <article class="band-text">
+              <h1>SpaceX Starship Launch</h1>
+              <p>SpaceX launched its Starship for the fourth time, aiming to test its capabilities for future Mars
+                missions​ (Space.com)​.</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-2">
+          <a href="/Other Pages/featured.html" class="card">
+            <div class="thumb" style="background-image: url(/img/featured-news/news-2.jpg);"></div>
+            <article class="band-text">
+              <h1>Boeing Starliner Delay</h1>
+              <p>NASA and Boeing delayed the Starliner crew return to Earth to address technical issues​ (Space Coast
+                Daily)​​ (UPI)​.</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-3">
+          <a href="/Other Pages/featured.html" class="card">
+            <div class="thumb" style="background-image: url(/img/featured-news/news-3.jpg);"></div>
+            <article class="band-text">
+              <h1>Black Hole Observations</h1>
+              <p>NASA's planet hunters observed two distant black holes, aiding understanding of galaxy formation​
+                (SciTechDaily)​.</p>
+            </article>
+          </a>
+        </div>
+        <div class="item-4">
+          <a href="/Other Pages/featured.html" class="card">
+            <div class="thumb" style="background-image: url(/img/featured-news/news-4.jpg);"></div>
+            <article class="band-text">
+              <h1>Gateway Space Station Progress</h1>
+              <p>The HALO module of NASA’s Gateway station is ready for final outfitting ahead of its 2025 launch​
+                (UPI)​.</p>
+            </article>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- image -->
+
+    <div class="container-image">
+      <img src="img/hubble.webp" alt="">
+      <div class="gradient-overlay"></div>
+      <div class="overlay">
+        <h1>5,300 Light-Years From Earth</h1>
+        <p>This captivating image from the Hubble Space Telescope showcases an impressive assembly of interstellar gas
+          and dust. Known as RCW 7, this nebula is situated a little more than 5,300 light-years away from Earth in the
+          constellation Puppis.</p>
+      </div>
+    </div>
+
+
+    <!-- cards -->
+
+    <div class="card-container">
+      <section class="card-section">
+        <div class="row-cards">
+          <article class="card-column-1">
+            <div class="card-column-content">
+              <div class="card-image">
+                <img src="/img/card-img/card-1.webp" alt="Planets Image">
+              </div>
+              <h2 class="card-title">PLANETS</h2>
+              <p class="card-description">
+                Explore planets in our solar system: size, atmosphere, discovery date,
+                and more
+              </p>
+              <a href="/about planets/about-planets.html" class="card-cta" tabindex="0">Learn More</a>
+            </div>
+          </article>
+          <article class="card-column-2">
+            <div class="card-column-content">
+              <div class="card-image">
+                <img src="/img/card-img/card-2.webp" alt="Big Bang Theory Image">
+              </div>
+              <h2 class="card-title">BIG BANG THEORY</h2>
+              <p class="card-description">
+                Explore planets in our solar system: size, atmosphere, discovery date,
+                and more
+              </p>
+              <a href="/Other Pages/bigbang.html" class="card-cta" tabindex="0">Learn More</a>
+            </div>
+          </article>
+          <article class="card-column-3">
+            <div class="card-column-content">
+              <div class="card-image">
+                <img src="/img/card-img/card-3.jpg" alt="Evolution of Earth Image">
+              </div>
+              <h2 class="card-title">EVOLUTION OF EARTH</h2>
+              <p class="card-description">
+                Discover Earth's formation and evolution over billions of years
+              </p>
+              <a href="/Other Pages/evaluation.html" class="card-cta" tabindex="0">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="card-section">
+        <div class="row-cards">
+          <article class="card-column-4">
+            <div class="card-column-content">
+              <div class="card-image">
+                <img src="/img/card-img/card-4.jpg" alt="Constellations Image">
+              </div>
+              <h2 class="card-title">CONSTELLATIONS</h2>
+              <p class="card-description">
+                Learn about star patterns, their formation, and famous constellations
+              </p>
+              <a href="/Other Pages/constellations.html" class="card-cta" tabindex="0">Learn More</a>
+            </div>
+          </article>
+          <article class="card-column-5">
+            <div class="card-column-content">
+              <div class="card-image">
+                <img src="/img/card-img/card-5.jpg" alt="Comets Image">
+              </div>
+              <h2 class="card-title">COMETS</h2>
+              <p class="card-description">
+                Explore comets, their origins, and their impact on our solar system
+              </p>
+              <a href="/Other Pages/comets.html" class="card-cta" tabindex="0">Learn More</a>
+            </div>
+          </article>
+          <article class="card-column-6">
+            <div class="card-column-content">
+              <div class="card-image">
+                <img src="/img/card-img/card-6.webp" alt="Latest Developments Image">
+              </div>
+              <h2 class="card-title">OBSERVATORY</h2>
+              <p class="card-description">
+                Explore the cosmos with these telescopes. See the universe in stunning detail.
+              </p>
+              <a href="/Other Pages/observatory.html" class="card-cta" tabindex="0">Learn More</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section footer-branding">
+        <div class="footer-title">Astronomy Insights</div>
+        <div class="footer-subtitle">© 2010 — 2024</div>
+        <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-subtitle"><a href="index.html">Home</a></div>
+        <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+        <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Resources</div>
+        <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+        <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Company</div>
+        <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+        <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+        <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/script.js"></script>
+
+</body>
+
+</html>
