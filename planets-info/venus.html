@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venus - Astronomy Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/planets-info/style.css">
+    <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+  
+</head>
+<style>
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/planets/venus.webp");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+    <main class="planet-container">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+ 
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>V e n u s</h1>
+              <p>Greetings! I'm Venus, the dazzling jewel of the night sky.</p>
+            </div>
+          </div>
+        <section>
+            <div class="planet-info">
+              <div class="planet-row">
+                <div class="planet-description">
+                    <h2>Overview</h2>
+                    <p class="head-para">Venus is the second planet from the Sun and is Earth's closest planetary neighbor. It is similar in structure and size to Earth, but it has an extremely thick and toxic atmosphere that traps heat, making it the hottest planet in our solar system.</p>
+                    <h3>Physical Characteristics</h3>
+                    <ul>
+                        <li><strong>Diameter:</strong> 12,104 km</li>
+                        <li><strong>Mass:</strong> 4.87 × 10^24 kg</li>
+                        <li><strong>Average Temperature:</strong> 464 °C</li>
+                    </ul>
+                    <h3>Orbit & Rotation</h3>
+                    <ul>
+                        <li><strong>Orbital Period:</strong> 225 Earth days</li>
+                        <li><strong>Rotation Period:</strong> 243 Earth days</li>
+                        <li><strong>Distance from Sun:</strong> 108.2 million km</li>
+                    </ul>
+                    <h3>Moons</h3>
+                    <p class="para">Venus has no moons.</p>
+                    <h3>Atmosphere</h3>
+                    <p  class="para"><strong >Thick Atmosphere:</strong> Venus has a very thick atmosphere composed mainly of carbon dioxide (96.5%) and nitrogen (3.5%), with traces of sulfur dioxide, water vapor, and other gases. Its thick atmosphere creates a strong greenhouse effect, trapping heat.</p>
+                    <p class="para"><strong>Temperature Extremes:</strong> Surface temperatures on Venus average around 465°C (869°F), hot enough to melt lead. This makes Venus the hottest planet in our solar system, despite not being the closest to the Sun.</p>
+                    <h3>Exploration History</h3>
+                    <p class="para"><strong >Venera Program (1961-1984):</strong> The Soviet Union's Venera program sent multiple probes to Venus, with Venera 7 being the first spacecraft to land on another planet and transmit data back to Earth.</p>
+                    <p class="para"><strong>Magellan (1989-1994):</strong>  NASA's Magellan spacecraft mapped 98% of Venus' surface using radar, providing detailed images of its topography.</p>
+                    <p class="para"><strong>Akatsuki (2010-Present):</strong>  JAXA's Akatsuki mission is currently studying Venus' atmosphere and weather patterns.</p>
+                    <h3>Interesting Facts</h3>
+                    <p class="para"><strong >Retrograde Rotation:</strong> Venus rotates in the opposite direction to most planets in the solar system. This means that if you were standing on Venus, you would see the Sun rise in the west and set in the east.</p>
+                    <p class="para"><strong>urface Pressure:</strong>  The surface pressure on Venus is about 92 times that of Earth's, equivalent to the pressure found 900 meters (3,000 feet) underwater on Earth.</p>
+                    <p class="para"><strong>Volcanic Activity:</strong>   Venus has more volcanoes than any other planet in the solar system, with over 1,600 major volcanoes identified.</p>
+                    <h3>Summary</h3>
+                    <p class="summary">Venus, with its thick, toxic atmosphere and extreme surface temperatures, presents a stark contrast to Earth despite being a similar size and composition. Its geological features and the history of exploration reveal a planet with a dynamic and active history, offering insights into atmospheric and volcanic processes.</p>
+                </div>
+                <div class="planet-pics planet-column">
+            
+                  <!-- Mini Slideshow -->
+                  
+                  <div class="mini-slide-show slide-show">
+                    <div style="max-width: 100%;">
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/venus/venus-img.webp" style="width:100% " onclick="openModal(this)">
+                        
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/venus/venus-volcano.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/venus/venus-radar.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/venus/venus-northern.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/venus/venus-impact.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      
+      
+                      <button class="button black display-left" onclick="plusDivsMini(-1)"><i
+                          class="ri-arrow-left-wide-fill"></i></button>
+                      <button class="button black display-right" onclick="plusDivsMini(1)"><i
+                          class="ri-arrow-right-wide-fill"></i></button>
+                    </div>
+                  </div>
+      
+                  <!-- Modal Structure -->
+      
+                  <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                  </div>
+      
+                  <!-- Other Topics -->
+      
+                  <div class="topics-section">
+                    <h2>More Topics</h2>
+                    <div class="topics-container">
+                      <div class="topic-card">
+                        <a href="/planets-info/earth.html">
+                          <img src="img/planets/earth.webp" alt="neighbour">
+                      </a>
+                        <div class="topic-overlay">
+                          <h3>Neighbouring Planet - Earth</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                      <div class="topic-card">
+                        <a href="/Other Pages/constellations.html"><img src="img/other-pages/constellation.jpg" alt="related"></a>
+                        <div class="topic-overlay">
+                          <h3>Constellations</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                      <div class="topic-card">
+                        <a href="/Other Pages/evaluation.html"><img src="img/other-pages/evolution.jpg" alt="related"></a>
+                        <div class="topic-overlay">
+                          <h3>Evolution of Earth</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+              
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-branding">
+                <div class="footer-title">Astronomy Insights</div>
+                <div class="footer-subtitle">© 2010 — 2024</div>
+                <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Quick Links</div>
+                <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+                <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+                <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Resources</div>
+                <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+                <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+                <div class="footer-subtitle"><a href="/footer/Gallery.html">Gallery</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Company</div>
+                <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+                <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+                <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="main-background"></div>
+
+    <script src="/planets-info/script.js"></script>
+
+</body>
+
+</html>

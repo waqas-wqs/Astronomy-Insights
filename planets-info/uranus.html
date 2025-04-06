@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uranus - Astronomy Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/planets-info/style.css">
+    <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+  
+</head>
+<style>
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/planets/uranus.webp");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+    <main class="planet-container">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+ 
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>U r a n u s</h1>
+              <p>Hey there! I'm Uranus, the icy giant with a quirky spin.</p>
+            </div>
+          </div>
+        <section>
+            <div class="planet-info">
+              <div class="planet-row">
+                <div class="planet-description">
+                    <h2>Overview</h2>
+                    <p class="head-para">Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is unique in that it rotates on its side, which means its poles are in the same plane as the rest of the Solar System. It has a faint ring system and a complex atmosphere that includes water, ammonia, and methane.</p>
+                    <h3>Physical Characteristics</h3>
+                    <ul>
+                        <li><strong>Diameter:</strong> 50,724 km</li>
+                        <li><strong>Mass:</strong> 8.68 × 10^25 kg</li>
+                        <li><strong>Average Temperature:</strong> -195 °C</li>
+                    </ul>
+                    <h3>Orbit & Rotation</h3>
+                    <ul>
+                        <li><strong>Orbital Period:</strong> 84 Earth years</li>
+                        <li><strong>Rotation Period:</strong> 17 hours</li>
+                        <li><strong>Distance from Sun:</strong> 2.9 billion km</li>
+                    </ul>
+                    <h3>Moons</h3>
+                    <p class="para">Uranus has 27 known moons, with the largest being Titania, Oberon, Umbriel, Ariel, and Miranda.</p>
+                    <h3>Atmosphere</h3>
+                    <p  class="para"><strong >Ice Giant:</strong>Uranus' atmosphere is composed mainly of hydrogen (83%) and helium (15%), with a higher proportion of "ices" such as water, ammonia, and methane.</p>
+                    <p class="para"><strong>Temperature Extremes:</strong> Upper atmospheric temperatures are around -224°C (-371°F), making it one of the coldest planets.</p>
+                    <h3>Exploration history</h3>
+                    <p  class="para"><strong >Voyager 2 (1986): </strong>The only spacecraft to fly by Uranus, providing data on its atmosphere, rings, and moons.</p>
+                    <h3>Interesting Facts</h3>
+                    <p class="para"><strong >Axial Tilt:</strong> Uranus has an extreme axial tilt of 98 degrees, causing it to essentially roll on its side as it orbits the Sun.</p>
+                    <p class="para"><strong>Methane: </strong> The presence of methane in its atmosphere gives Uranus its characteristic blue-green color.</p>
+                    <p class="para"><strong>Magnetic Field:</strong>  Uranus has an unusual magnetic field that is tilted 59 degrees from its rotational axis and offset from its center.</p>
+                    <h3>Summary</h3>
+                    <p class="summary">Uranus, with its extreme tilt and unique atmospheric composition, challenges our understanding of planetary formation and dynamics. Its distinct characteristics, observed by Voyager 2, continue to intrigue scientists and drive the need for further exploration.</p>
+                </div>
+                <div class="planet-pics planet-column">
+            
+                  <!-- Mini Slideshow -->
+                  
+                  <div class="mini-slide-show slide-show">
+                    <div style="max-width: 100%;">
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/uranus/uranus-img.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/uranus/uranus-hubble.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/uranus/uranus-moons.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/uranus/uranus-atmosphere.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/uranus/uranus-infrared.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+  
+      
+                      <button class="button black display-left" onclick="plusDivsMini(-1)"><i
+                          class="ri-arrow-left-wide-fill"></i></button>
+                      <button class="button black display-right" onclick="plusDivsMini(1)"><i
+                          class="ri-arrow-right-wide-fill"></i></button>
+                    </div>
+                  </div>
+      
+                  <!-- Modal Structure -->
+      
+                  <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                  </div>
+      
+                  <!-- Other Topics -->
+      
+                  <div class="topics-section">
+                    <h2>More Topics</h2>
+                    <div class="topics-container">
+                      <div class="topic-card">
+                        <a href="/planets-info/neptune.html">
+                          <img src="img/planets/neptune.webp" alt="neighbour">
+                      </a>
+                        <div class="topic-overlay">
+                          <h3>Neighbouring Planet - Neptune</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                      <div class="topic-card">
+                        <a href="/Other Pages/evaluation.html"><img src="img/other-pages/evolution.jpg" alt="related"></a>
+                        <div class="topic-overlay">
+                          <h3>Evolution of Earth</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                      <div class="topic-card">
+                        <a href="/Other Pages/bigbang.html"><img src="img/other-pages/bigbang.webp" alt="related"></a>
+                        <div class="topic-overlay">
+                          <h3>Big Bang Theory</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-branding">
+                <div class="footer-title">Astronomy Insights</div>
+                <div class="footer-subtitle">© 2010 — 2024</div>
+                <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Quick Links</div>
+                <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+                <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+                <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Resources</div>
+                <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+                <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+                <div class="footer-subtitle"><a href="/footer/Gallery.html">Gallery</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Company</div>
+                <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+                <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+                <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="main-background"></div>
+
+    <script src="/planets-info/script.js"></script>
+
+</body>
+
+</html>

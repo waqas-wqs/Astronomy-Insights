@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saturn - Astronomy Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/planets-info/style.css">
+    <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+  
+</head>
+<style>
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/planets/saturn.webp");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+    <main class="planet-container">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+ 
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>S a t u r n</h1>
+              <p>Greetings! I'm Saturn, adorned with my stunning rings.</p>
+            </div>
+          </div>
+        <section >
+            <div class="planet-info">
+              <div class="planet-row">
+                <div class="planet-description">
+                    <h2>Overview</h2>
+                    <p class="head-para">Saturn is the sixth planet from the Sun and the second-largest in the solar system. It is best known for its extensive and complex ring system, which is primarily composed of ice particles, rocky debris, and dust. Saturn is a gas giant, like Jupiter, with an atmosphere mostly of hydrogen and helium.</p>
+                    <h3>Physical Characteristics</h3>
+                    <ul>
+                        <li><strong>Diameter:</strong> 116,460 km</li>
+                        <li><strong>Mass:</strong> 5.68 × 10^26 kg</li>
+                        <li><strong>Average Temperature:</strong> -178 °C</li>
+                    </ul>
+                    <h3>Orbit & Rotation</h3>
+                    <ul>
+                        <li><strong>Orbital Period:</strong> 29.5 Earth years</li>
+                        <li><strong>Rotation Period:</strong> 10.7 hours</li>
+                        <li><strong>Distance from Sun:</strong> 1.4 billion km</li>
+                    </ul>
+                    <h3>Moons</h3>
+                    <p class="para">Saturn has 83 known moons, with the largest being Titan, which is larger than the planet Mercury and has a thick atmosphere.</p>
+                    <h3>Atmosphere</h3>
+                    <p  class="para"><strong >Gas Giant:</strong>Saturn's atmosphere is composed mainly of hydrogen (96.3%) and helium (3.25%), with traces of methane, ammonia, and other gases.</p>
+                    <p class="para"><strong>Temperature Extremes:</strong> Upper atmospheric temperatures are around -178°C (-288°F), while temperatures increase closer to the core.</p>
+                    <h3>Interesting Facts</h3>
+                    <p class="para"><strong >Ring System:</strong>  Saturn is best known for its extensive ring system, composed of ice particles, rocky debris, and dust.</p>
+                    <p class="para"><strong>Titan: </strong>Saturn's largest moon, Titan, has a thick atmosphere and liquid hydrocarbon lakes, making it a key target for studying prebiotic chemistry.</p>
+                    <p class="para"><strong>Density:</strong>Saturn has the lowest density of all the planets; it is less dense than water.</p>
+                    <h3>Summary</h3>
+                    <p class="summary">Saturn, with its majestic ring system and diverse moons, is a prime target for understanding the dynamics of gas giants and the conditions that can lead to complex chemical processes. The data from missions like Cassini-Huygens have significantly expanded our knowledge of this fascinating planet.</p>
+                </div>
+                <div class="planet-pics planet-column">
+            
+                  <!-- Mini Slideshow -->
+                  
+                  <div class="mini-slide-show slide-show">
+                    <div style="max-width: 100%;">
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/saturn/saturn-rings.webp" style="width:100%" onclick="openModal(this)">
+                       
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/saturn/saturn-atmosphere.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/saturn/saturn-moon.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/saturn/saturn-moon2.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                     
+      
+                      
+      
+                      <button class="button black display-left" onclick="plusDivsMini(-1)"><i
+                          class="ri-arrow-left-wide-fill"></i></button>
+                      <button class="button black display-right" onclick="plusDivsMini(1)"><i
+                          class="ri-arrow-right-wide-fill"></i></button>
+                    </div>
+                  </div>
+      
+                  <!-- Modal Structure -->
+      
+                  <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                  </div>
+      
+                  <!-- Other Topics -->
+      
+                  <div class="topics-section">
+                    <h2>More Topics</h2>
+                    <div class="topics-container">
+                      <div class="topic-card">
+                        <a href="/planets-info/uranus.html">
+                          <img src="img/planets/uranus.webp" alt="neighbour">
+                      </a>
+                      <div class="topic-overlay">
+                        <h3>Neighbouring Planet - Uranus</h3>
+                        <span class="arrow">➔</span>
+                      </div>
+                    </div>
+                    <div class="topic-card">
+                      <a href="/Other Pages/observatory.html"><img src="img/other-pages/observatory.webp" alt="related" ></a>
+                      <div class="topic-overlay">
+                        <h3>Observatory</h3>
+                        <span class="arrow">➔</span>
+                      </div>
+                    </div>
+                    <div class="topic-card">
+                      <a href="/Other Pages/comets.html"><img src="img/other-pages/comets.jpg" alt="related"></a>
+                      <div class="topic-overlay">
+                        <h3>Comets</h3>
+                        <span class="arrow">➔</span>
+                      </div>
+                    </div>
+                      
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-branding">
+                <div class="footer-title">Astronomy Insights</div>
+                <div class="footer-subtitle">© 2010 — 2024</div>
+                <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Quick Links</div>
+                <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+                <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+                <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Resources</div>
+                <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+                <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+                <div class="footer-subtitle"><a href="/footer/Gallery.html">Gallery</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Company</div>
+                <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+                <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+                <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="main-background"></div>
+
+    <script src="/planets-info/script.js"></script>
+
+</body>
+
+</html>

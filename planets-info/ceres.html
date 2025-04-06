@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceres - Astronomy Insights</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/planets-info/style.css">
+  <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+
+</head>
+<style>
+  .hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/planets/ceres.webp");
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+  <main class="planet-container">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+
+
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1>c e r e s</h1>
+        <p>Hey! I'm Ceres, the largest asteroid and the only dwarf planet in the asteroid belt.</p>
+
+      </div>
+    </div>
+    <section>
+      <div class="planet-info">
+        <div class="planet-row">
+          <div class="planet-description">
+            <h2>Overview</h2>
+            <p class="head-para">Ceres is the largest object in the asteroid belt between Mars and Jupiter, and it is
+              the only dwarf planet located in the inner solar system. Ceres is unique because it is both a dwarf planet
+              and an asteroid. It is composed of rock and ice and shows evidence of geologic activity and possibly an
+              ancient ocean beneath its surface.</p>
+            <h3>Physical Characteristics</h3>
+            <ul>
+              <li><strong>Diameter:</strong> 940 km</li>
+              <li><strong>Mass:</strong> 9.4 × 10^20 kg</li>
+              <li><strong>Average Temperature:</strong> -105 °C</li>
+            </ul>
+            <h3>Orbit & Rotation</h3>
+            <ul>
+              <li><strong>Orbital Period:</strong> 4.6 Earth years</li>
+              <li><strong>Rotation Period:</strong> 9 hours</li>
+              <li><strong>Distance from Sun:</strong> 413.7 million km</li>
+            </ul>
+            <h3>Moons</h3>
+            <p class="para">Ceres has no moons.</p>
+            <h3>Atmosphere</h3>
+            <p class="para"><strong>Thin Exosphere:</strong> Ceres has a very thin exosphere with water vapor detected,
+              likely originating from ice beneath its surface.</p>
+            <p class="para"><strong>Temperature Extremes:</strong> Surface temperatures on Ceres range from about -105°C
+              (-157°F) to -34°C (-29°F).</p>
+            <h3>Exploration History</h3>
+            <p class="para"><strong>Dawn Mission (2007-2018): </strong> NASA's Dawn spacecraft studied Ceres in detail,
+              revealing its surface composition and geological activity.</p>
+
+            <h3>Interesting Facts</h3>
+            <p class="para"><strong>Water Ice:</strong> Ceres is believed to contain a large amount of water ice beneath
+              its surface.</p>
+            <p class="para"><strong>Cryovolcanism: </strong> Evidence suggests that Ceres may have cryovolcanoes, which
+              erupt water or other volatiles instead of molten rock.</p>
+            <p class="para"><strong>Bright Spots:</strong> The bright spots in the Occator Crater are believed to be
+              deposits of sodium carbonate, indicating past hydrothermal activity.</p>
+            <h3>Summary</h3>
+            <p class="summary">Ceres, the largest object in the asteroid belt, shows signs of water ice and
+              cryovolcanism, making it a unique object of study. The data from the Dawn mission have greatly expanded
+              our understanding of this dwarf planet's composition and history.
+
+            </p>
+          </div>
+          <div class="planet-pics planet-column">
+
+            <!-- Other Topics -->
+
+            <div class="topics-section">
+              <h2>More Topics</h2>
+              <div class="topics-container">
+                <div class="topic-card">
+                  <a href="/planets-info/haumea.html">
+                    <img src="img/planets/haumea1.webp" alt="neighbour">
+                </a>
+                  <div class="topic-overlay">
+                    <h3>Neighbouring Planet - Haumea</h3>
+                    <span class="arrow">➔</span>
+                  </div>
+                </div>
+                <div class="topic-card">
+                  <a href="/Other Pages/bigbang.html"><img src="img/other-pages/bigbang.webp" alt="related"></a>
+                  <div class="topic-overlay">
+                    <h3>Big Bang Theory</h3>
+                    <span class="arrow">➔</span>
+                  </div>
+                </div>
+                <div class="topic-card">
+                  <a href="/Other Pages/comets.html"><img src="img/other-pages/comets.jpg" alt="related"></a>
+                  <div class="topic-overlay">
+                    <h3>Comets</h3>
+                    <span class="arrow">➔</span>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section footer-branding">
+        <div class="footer-title">Astronomy Insights</div>
+        <div class="footer-subtitle">© 2010 — 2024</div>
+        <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Quick Links</div>
+        <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+        <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+        <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Resources</div>
+        <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+        <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+        <div class="footer-subtitle"><a href="/footer/Gallery.html">Gallery</a></div>
+      </div>
+      <div class="footer-section">
+        <div class="footer-title">Company</div>
+        <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+        <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+        <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="main-background"></div>
+
+  <script src="/planets-info/script.js"></script>
+
+</body>
+
+</html>

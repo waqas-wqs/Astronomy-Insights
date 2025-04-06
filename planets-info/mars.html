@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars - Astronomy Insights</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/stellarvoyage/bootstrap-5.1.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/planets-info/style.css">
+    <link rel="shortcut icon" href="/img/astronomy-insights.png" type="image/x-icon">
+  
+</head>
+<style>
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/planets/mars.webp");
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+</style>
+
+<body>
+  <header>
+    <nav class="navbar-main">
+      <div class="navbar-left">
+          <div class="navbar">
+            <a href="/index.html">Home</a>
+            <a href="/footer/Contact.html">Contact Us</a>
+            <div class="dropdown">
+              <button class="dropbtn">Explore
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <div class="row">
+                  <div class="column">
+                    <a href="/about planets/about-planets.html" class="link-item">
+                      <i class="ri-planet-line"></i>
+                      <span>Planets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/bigbang.html" class="link-item">
+                      <i class="ri-globe-line"></i>
+                      <span>Big Bang Theory</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/evaluation.html" class="link-item">
+                      <i class="ri-earth-line"></i>
+                      <span>Evolution Of Earth</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/constellations.html" class="link-item">
+                      <i class="ri-sparkling-line"></i>
+                      <span>Constellations</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/comets.html" class="link-item">
+                      <i class="ri-medal-2-line"></i>
+                      <span>Comets</span>
+                    </a>
+                  </div>
+                  <div class="column">
+                    <a href="/Other Pages/observatory.html" class="link-item">
+                      <i class="ri-microscope-line"></i>
+                      <span>Observatory</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="navbar-center">
+        <a href="/index.html">
+          <img src="/img/astronomy-insights.png" alt="Logo" class="logo">
+        </a>
+      </div>
+      <div class="search-box">
+        <button class="btn-search"><i class="ri-search-line"></i></button>
+        <input type="text" id="search-bar" class="input-search" placeholder="Search..." onclick="stopPropagation(event)"
+          onkeypress="handleKeyPress(event)">
+      </div>
+    </nav>
+  </header>
+
+    <main class="planet-container">
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="ri-arrow-up-line"></i></button>
+ 
+ 
+        <div class="hero-image">
+            <div class="hero-text">
+              <h1>M a r s</h1>
+              <p>Hi! I'm Mars, the adventurous Red Planet full of mysteries.</p>
+            </div>
+          </div>
+        <section>
+            <div class="planet-info">
+              <div class="planet-row">
+                <div class="planet-description">
+                    <h2>Overview</h2>
+                    <p class="head-para">Mars is the fourth planet from the Sun and is often referred to as the "Red Planet" because of its reddish appearance. Mars is a cold desert world with a thin atmosphere. It has the largest volcano and canyon in the solar system.</p>
+                    <h3>Physical Characteristics</h3>
+                    <ul>
+                        <li><strong>Diameter:</strong> 6,779 km</li>
+                        <li><strong>Mass:</strong> 6.42 × 10^23 kg</li>
+                        <li><strong>Average Temperature:</strong> -63 °C</li>
+                    </ul>
+                    <h3>Orbit & Rotation</h3>
+                    <ul>
+                        <li><strong>Orbital Period:</strong> 687 Earth days</li>
+                        <li><strong>Rotation Period:</strong> 24.6 hours</li>
+                        <li><strong>Distance from Sun:</strong> 227.9 million km</li>
+                    </ul>
+                    <h3>Moons</h3>
+                    <p class="para">Mars has two small moons, Phobos and Deimos.</p>
+                    <h3>Atmosphere</h3>
+                    <p  class="para"><strong >Thin Atmosphere:</strong>  Mars has a thin atmosphere composed mainly of carbon dioxide (95.3%), nitrogen (2.7%), and argon (1.6%), with traces of oxygen and water vapor.</p>
+                    <p class="para"><strong>Temperature Extremes:</strong> Surface temperatures on Mars range from -125°C (-195°F) during winter at the poles to 20°C (70°F) at the equator during summer.</p>
+                    <h3>Interesting Facts</h3>
+                    <p class="para"><strong >Olympus Mons: </strong> Mars is home to Olympus Mons, the tallest volcano in the solar system, standing at about 22 kilometers (13.6 miles) high.</p>
+                    <p class="para"><strong>Seasonal Changes: </strong> Mars experiences seasons due to its axial tilt, similar to Earth, but they last about twice as long due to its longer orbital period.</p>
+                    <p class="para"><strong>Evidence of Water:</strong>  Various missions have found evidence of past liquid water on Mars, including river valleys, lake beds, and minerals that form in water.</p>
+                    <h3>Summary</h3>
+                    <p class="summary">Mars, often called the "Red Planet" due to its iron oxide-rich soil, is a focal point for exploration due to its potential for past life and future human colonization. Its thin atmosphere, geological features, and ongoing robotic missions provide valuable data for understanding its history and potential habitability.</p>
+                </div>
+                <div class="planet-pics planet-column">
+            
+                  <!-- Mini Slideshow -->
+                  
+                  <div class="mini-slide-show slide-show">
+                    <div style="max-width: 100%;">
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/mars/mars-img.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/mars/mars-mission.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/mars/mars-earthmoon.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/mars/mars-crust.jpg" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      <div class="mini-slide-show-text-container">
+                        <img class="mySlides" src="img/mars/mars-spring.webp" style="width:100%" onclick="openModal(this)">
+                      </div>
+      
+                      
+      
+                      <button class="button black display-left" onclick="plusDivsMini(-1)"><i
+                          class="ri-arrow-left-wide-fill"></i></button>
+                      <button class="button black display-right" onclick="plusDivsMini(1)"><i
+                          class="ri-arrow-right-wide-fill"></i></button>
+                    </div>
+                  </div>
+      
+                  <!-- Modal Structure -->
+      
+                  <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <img class="modal-content" id="modalImg">
+                  </div>
+      
+                  <!-- Other Topics -->
+      
+                  <div class="topics-section">
+                    <h2>More Topics</h2>
+                    <div class="topics-container">
+                      <div class="topic-card">
+                        <a href="/planets-info/jupiter.html">
+                          <img src="img/planets/jupiter.webp" alt="neighbour">
+                      </a>
+                        <div class="topic-overlay">
+                          <h3>Neighbouring Planet - Jupiter</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                      <div class="topic-card">
+                        <a href="/Other Pages/observatory.html"><img src="img/other-pages/observatory.webp" alt="related" height="580px" width="600px"></a>
+                        <div class="topic-overlay">
+                          <h3>Observatory</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                      <div class="topic-card">
+                        <a href="/Other Pages/constellations.html"><img src="img/other-pages/constellation.jpg" alt="related"></a>
+                        <div class="topic-overlay">
+                          <h3>Constellations</h3>
+                          <span class="arrow">➔</span>
+                        </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+      
+                </div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section footer-branding">
+                <div class="footer-title">Astronomy Insights</div>
+                <div class="footer-subtitle">© 2010 — 2024</div>
+                <div class="footer-subtitle"><a href="/footer/Privacy&terms.html">Privacy — Terms</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Quick Links</div>
+                <div class="footer-subtitle"><a href="/index.html">Home</a></div>
+                <div class="footer-subtitle"><a href="/about planets/about-planets.html">About Planets</a></div>
+                <div class="footer-subtitle"><a href="/Other Pages/featured.html">News & Update</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Resources</div>
+                <div class="footer-subtitle"><a href="/footer/Sitemap.html">Sitemap</a></div>
+                <div class="footer-subtitle"><a href="/footer/FAQ.html">FAQ</a></div>
+                <div class="footer-subtitle"><a href="/footer/Gallery.html">Gallery</a></div>
+            </div>
+            <div class="footer-section">
+                <div class="footer-title">Company</div>
+                <div class="footer-subtitle"><a href="/footer/About-us.html">About Us</a></div>
+                <div class="footer-subtitle"><a href="/footer/Support.html">Support</a></div>
+                <div class="footer-subtitle"><a href="/footer/Contact.html">Contact</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="main-background"></div>
+
+    <script src="/planets-info/script.js"></script>
+
+</body>
+
+</html>
